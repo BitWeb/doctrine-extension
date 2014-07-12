@@ -1,4 +1,4 @@
 doctrine-extension
 ==================
 
-BitWeb estension for Doctrine ORM.
+BitWeb extension for Doctrine ORM.
