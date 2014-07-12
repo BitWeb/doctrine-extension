@@ -1,6 +1,5 @@
 Doctrine Extension
 ==================
-
 BitWeb extension for Doctrine ORM.
 
 This extension adds the following types to Doctrine:
