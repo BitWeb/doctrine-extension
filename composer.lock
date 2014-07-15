@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0467434f555ac66e35b5b3beb1a1a416",
+    "hash": "0c42ced1e45cf523fc5b716a556f8e70",
     "packages": [
         {
             "name": "bitweb/stdlib",

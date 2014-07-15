@@ -2,7 +2,7 @@
 
 namespace BitWeb\DoctrineExtension;
 
-use BitWeb\Stdlib\Util\StringUtil;
+use BitWeb\Stdlib\StringUtil;
 use Zend\Filter\File\RenameUpload;
 
 class File extends \SplFileInfo
@@ -414,7 +414,7 @@ class File extends \SplFileInfo
             //echo 'trying to rename: ' . $this->getRealPath() .' -to->' . $this->basePath . $this->relativeBasePath . $directory . DIRECTORY_SEPARATOR . $newFileName.'<br>';
             rename($this->getRealPath(), $this->basePath . $this->relativeBasePath . $directory . DIRECTORY_SEPARATOR . $newFileName);
         }
-        $this->relativeFileName = $this->relativeBasePath . $directory . DIRECTORY_SEPARATOR . $newFileName;
+        $this->relativeFileName = $this->basePath . $this->relativeBasePath . $directory . DIRECTORY_SEPARATOR . $newFileName;
 
         $className = get_class($this); // Needed for extending
 
