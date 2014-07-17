@@ -1,6 +1,7 @@
 <?php
 namespace BitWeb\DoctrineExtension\Listener;
 
+use BitWeb\DoctrineExtension\Mapping\File;
 use Doctrine\Common\EventManager;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Events;
@@ -8,7 +9,7 @@ use Doctrine\ORM\Events;
 class FileListener extends CommonListener
 {
 
-    const MAPPING = 'BitWeb\DoctrineExtension\Mapping\File';
+    const MAPPING = File::class;
 
     private $isUpdated = false;
 
