@@ -1,0 +1,6 @@
+This is a file for testing the bitweb doctrine extensions library.
+
+
+
+
+And this is the end of it. Find anything useful here? I'm afraid not...

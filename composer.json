@@ -15,9 +15,13 @@
         "bitweb/stdlib": "~1.1.0",
         "zendframework/zend-filter": "~2.3"
     },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
     "autoload": {
         "psr-4": {
-            "BitWeb\\DoctrineExtension\\": "src/"
+            "BitWeb\\DoctrineExtension\\": "src/",
+            "BitWebTest\\DoctrineExtension\\": "test/"
         }
     }
 }

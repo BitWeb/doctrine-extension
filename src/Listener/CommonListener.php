@@ -11,7 +11,7 @@ abstract class CommonListener
 
     const MAPPING = null;
 
-    protected static $mappingNames = array();
+    protected static $mappingNames = [];
 
     private static $mappings = null;
 
@@ -41,7 +41,7 @@ abstract class CommonListener
 
             return self::$mappings[$class->getName()];
         }
-        self::$mappings[$class->getName()] = array();
+        self::$mappings[$class->getName()] = [];
 
 
         $reader = new CachedReader(

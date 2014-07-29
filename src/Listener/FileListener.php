@@ -15,16 +15,16 @@ class FileListener extends CommonListener
 
     public function init(EventManager $eventManager)
     {
-        $eventManager->addEventListener(array(
+        $eventManager->addEventListener([
             Events::postUpdate,
             Events::postRemove,
             Events::postPersist,
-        ), $this);
+        ], $this);
     }
 
     protected function getMappingNames()
     {
-        return array(self::MAPPING);
+        return [self::MAPPING];
     }
 
     public function postPersist(LifecycleEventArgs $eventArgs)
