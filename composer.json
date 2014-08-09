@@ -10,9 +10,9 @@
         }
     ],
     "require": {
-        "doctrine/dbal": "~2.4.2",
-        "doctrine/orm": "~2.4.4",
-        "bitweb/stdlib": "~1.1.0",
+        "doctrine/dbal": "~2.4",
+        "doctrine/orm": "~2.4",
+        "bitweb/stdlib": "~1.1",
         "zendframework/zend-filter": "~2.3"
     },
     "require-dev": {
