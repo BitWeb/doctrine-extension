@@ -1,6 +1,7 @@
 {
     "name": "bitweb/doctrine-extension",
     "description": "BitWeb Doctrine Extension.",
+    "minimum-stability": "dev",
     "license": "BSD-3-Clause",
     "homepage": "http://bitweb.ee/",
     "authors": [
