@@ -1,4 +1,5 @@
 <?php
+
 namespace BitWeb\DoctrineExtension\Listener;
 
 use Doctrine\Common\Annotations\AnnotationReader;

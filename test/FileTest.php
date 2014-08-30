@@ -25,6 +25,4 @@ class FileTest extends \PHPUnit_Framework_TestCase
 
         $this->assertNull($file->getBasePath());
     }
-
-
 }
