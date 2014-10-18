@@ -9,7 +9,6 @@ use Doctrine\ORM\Event\LifecycleEventArgs;
 
 abstract class CommonListener
 {
-
     const MAPPING = null;
 
     protected static $mappingNames = [];

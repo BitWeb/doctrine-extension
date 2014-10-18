@@ -7,8 +7,7 @@ use Doctrine\Common\Annotations\Annotation;
 /**
  * @Annotation
  */
-final class File extends Annotation
+final class UserAgent extends Annotation
 {
-    public $relativeBasePath;
-    public $classPath = null;
+
 }

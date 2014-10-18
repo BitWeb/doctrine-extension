@@ -8,7 +8,6 @@ use Doctrine\ORM\Events;
 
 class FileListener extends CommonListener
 {
-
     const MAPPING = File::class;
 
     private $isUpdated = false;

@@ -7,8 +7,7 @@ use Doctrine\Common\Annotations\Annotation;
 /**
  * @Annotation
  */
-final class File extends Annotation
+final class Ip extends Annotation
 {
-    public $relativeBasePath;
-    public $classPath = null;
+
 }
