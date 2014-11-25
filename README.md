@@ -1,5 +1,8 @@
 Doctrine Extension
 ==================
+
+##php 5.4 compatibility branch
+
 BitWeb extension for Doctrine ORM.
 
 ####This extension adds the following types to Doctrine:

@@ -1,14 +1,13 @@
 <?php
 namespace BitWeb\DoctrineExtension\Listener;
 
-use BitWeb\DoctrineExtension\Mapping\UserAgent;
 use Doctrine\Common\EventManager;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Events;
 
 class UserAgentListener extends CommonListener
 {
-    const MAPPING = UserAgent::class;
+    const MAPPING = 'BitWeb\DoctrineExtension\Mapping\UserAgent';
 
     public function init(EventManager $eventManager)
     {

@@ -3,14 +3,13 @@
 namespace BitWeb\DoctrineExtension\Listener;
 
 use BitWeb\DoctrineExtension\Entity\SoftDeletable;
-use BitWeb\DoctrineExtension\Mapping\SoftDeletable as SoftDeletableMapping;
 use Doctrine\Common\EventManager;
 use Doctrine\ORM\Event\OnFlushEventArgs;
 use Doctrine\ORM\Events;
 
 class SoftDeletableListener extends CommonListener
 {
-    const MAPPING = SoftDeletableMapping::class;
+    const MAPPING = 'BitWeb\DoctrineExtension\Mapping\SoftDeletable';
 
     public function onFlush(OnFlushEventArgs $eventArgs)
     {

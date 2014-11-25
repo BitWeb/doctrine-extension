@@ -2,8 +2,6 @@
 
 namespace BitWeb\DoctrineExtension\Filter;
 
-use BitWeb\DoctrineExtension\Entity\SoftDeletable;
-use BitWeb\DoctrineExtension\Mapping\SoftDeletable as SoftDeletableMapping;
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\ORM\Mapping\ClassMetaData;
 use Doctrine\ORM\Query\Filter\SQLFilter;
@@ -13,7 +11,7 @@ class SoftDeleteFilter extends SQLFilter
 
     public function addFilterConstraint(ClassMetadata $targetEntity, $targetTableAlias)
     {
-        if (!in_array(SoftDeletable::class, $targetEntity->reflClass->getInterfaceNames())) {
+        if (!in_array('BitWeb\DoctrineExtension\Entity\SoftDeletable', $targetEntity->reflClass->getInterfaceNames())) {
             return '';
         }
 
@@ -23,7 +21,7 @@ class SoftDeleteFilter extends SQLFilter
         $constraint = '';
         $isFirst = true;
         foreach ($class->getProperties() as $property) {
-            if ($reader->getPropertyAnnotation($property, SoftDeletableMapping::class) !== null) {
+            if ($reader->getPropertyAnnotation($property, 'BitWeb\DoctrineExtension\Mapping\SoftDeletable') !== null) {
                 $constraint .= ($isFirst ? '' : ' AND ') . $targetTableAlias . '.' . $targetEntity->getColumnName($property->getName()) . ' IS NULL';
                 $isFirst = false;
             }

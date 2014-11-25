@@ -1,7 +1,6 @@
 <?php
 namespace BitWeb\DoctrineExtension\Listener;
 
-use BitWeb\DoctrineExtension\Mapping\Ip as IpMapping;
 use BitWeb\Stdlib\Ip;
 use Doctrine\Common\EventManager;
 use Doctrine\ORM\Event\LifecycleEventArgs;
@@ -9,7 +8,7 @@ use Doctrine\ORM\Events;
 
 class IpListener extends CommonListener
 {
-    const MAPPING = IpMapping::class;
+    const MAPPING = 'BitWeb\DoctrineExtension\Mapping\Ip';
 
     public function init(EventManager $eventManager)
     {
