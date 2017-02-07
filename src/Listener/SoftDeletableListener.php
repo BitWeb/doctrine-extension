@@ -17,6 +17,7 @@ class SoftDeletableListener extends CommonListener
         /* @var $entity SoftDeletable */
         $entityManager = $eventArgs->getEntityManager();
         $unitOfWork = $eventArgs->getEntityManager()->getUnitOfWork();
+
         foreach ($unitOfWork->getScheduledEntityDeletions() as $entity) {
             if ($entity instanceof SoftDeletable) {
                 $meta = $entityManager->getClassMetadata(get_class($entity));

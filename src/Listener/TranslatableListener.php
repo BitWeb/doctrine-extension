@@ -3,13 +3,14 @@
 namespace BitWeb\DoctrineExtension\Listener;
 
 use BitWeb\DoctrineExtension\Entity\Field\Translatable;
+use BitWeb\DoctrineExtension\Mapping\Translatable as TranslatableMapping;
 use Doctrine\Common\EventManager;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Events;
 
 class TranslatableListener extends CommonListener
 {
-    const MAPPING = \BitWeb\DoctrineExtension\Mapping\Translatable::class;
+    const MAPPING = TranslatableMapping::class;
 
     public function init(EventManager $eventManager)
     {
