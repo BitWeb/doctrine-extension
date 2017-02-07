@@ -9,7 +9,7 @@ use Doctrine\ORM\Events;
 
 class TranslatableListener extends CommonListener
 {
-    const MAPPING = Translatable::class;
+    const MAPPING = \BitWeb\DoctrineExtension\Mapping\Translatable::class;
 
     public function init(EventManager $eventManager)
     {
